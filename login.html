@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body{
             
@@ -17,7 +18,8 @@
         #login_container{
             padding: 20px;
             border: 2px solid black;
-            width:fit-content;
+            width:50%;
+            text-align: center;
             background-color: transparent;
             border-radius: 20px;
             background: rgba(255, 255, 255, 0.1); /* white with transparency */
@@ -28,29 +30,90 @@
         }
         .mail input{
             background: transparent;
-            height: 30px;
+            
             border-radius:10px;
+            padding: 2%;
+            width:50%;
+            border:1px solid black;
+            
 
         }
         .password input{
             background: transparent;
-            height: 30px;
+            
             border-radius:10px;
+            padding: 2%;
+            width:50%;
+            border:1px solid black;
+        }
+        .checkbox{
+            display: flex;
+            justify-content: center;
+            
+        }
+        #c-c{
+            background: transparent; /* white with transparency */
+            backdrop-filter: blur(10px);
+        }
+        .sing-in{
+         padding: 2%;
+            width:50%;   
+            background-color: rgb(18, 89, 203);
+            border-radius: 20px;
+        }
+        .divider{
+            display: flex;
+            align-items: center;
+            color:white ;
+            margin-left:5px;
+            padding: 20px;
+        }
+        .divider::after{
+            content:"";
+            flex: 0.5;
+            height: 1px;
+            background-color: aliceblue;
+        }
+        .divider::before{
+            content:"";
+            flex:0.5;
+            height: 1px;
 
+            background-color: aliceblue;
+        }
+        .other_option{
+            display: flex;
+            justify-content: space-evenly;
+        
+        }
+        .other_option button{
+            width: fit-content;
+            padding: 15px;
+            background: transparent;
+        }
+        .other_option button a{
+            color:black;
+            text-decoration: none;
+            font-size: medium;
+
+        }
+        .bottom{
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
 
     <div id="login_container">
+        <h1>welcome Back</h1>
+        <p>sign in to your account</p>
     <form action="./task.html">
         <p class="mail">
-            <input type="email" name="email" value="email" placeholder="email id" required>
+            <input type="email" name="email"  placeholder="email id" required>
         </p>
          <p class="password">
            <input type="password> 
-         </p>
-         <p>
          </p>
 
         </div>
@@ -82,14 +145,30 @@
             
             
     
-            " name="email" value="password" placeholder="password" required>
+            " name="email"  placeholder="password" required></p>
+        
+        <div class="checkbox">
+            <div style="margin-right: 20%;"><a align="center" href="https://www.google.com">forget password</a></div>
+            <label class="c-c"><input type="checkbox" id="c-b">remaind me<label>
+        </div>
+        <p>
+            <button class="sing-in">login</button>
+        </p>
+        <div class="divider">
+            <span>or continue with</span>
+        </div>
+        <div class="other_option">
+            <p>
+            <button class="sing-in"><i class="fa-brands fa-google"></i><a href="https//:www.google.com">google</a></button>
         </p>
         <p>
-            <a align="center" href="https://www.google.com">forget password</a>
+            <button class="sing-in"><i class="fa-brands fa-github"></i><a href="https//:www.github.com">github</a></button>
         </p>
-        <p>
-            <button>login</button>
-        </p>
+        </div>
+        <div class="bottom">
+            <div>don`t have an account ?</div>
+            <div><a href="index.html">sign in</a></div>
+        </div>
     </form>
 </body>
 </html>

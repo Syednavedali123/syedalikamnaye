@@ -7,40 +7,65 @@
     <style>
         body{
             height: 100vh;
-            background-color:gray;
-        }
+            background:linear-gradient(to bottom,#7B4BB7,#3AA0C8);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            }
         
             
         
         #inner_bg{
-            background-color: black;
+            background-color:#2F2A5A;
             color: aliceblue;
-            width: 50%;
-            padding-top:40px;
-            padding-bottom:40px;
-            padding-left: 50%;
-            margin-top:13% ;
-            
-        
+            width:fit-content;
+            padding:6%;
+            border-radius: 30px;
         }
+       #inner_bg p{
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: normal;
+            font-weight: 200;
+            margin-left:15% ;
+        }
+       #inner_bg h1{
+        text-align: center;
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+        color: azure;
+        margin-top: -15%;
+        
+
+        }
+        button{
+            width:200px;
+            text-align: center;
+            color:white;
+            background-color: rgb(7, 232, 7);
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+       
     </style>
 </head>
 <body>
     
     <form action="./login.html" id="inner_bg">
+        <h1>Registration Form</h1>
         <p>
-            Name
+            Name:
         <input type="name" placeholder="Enter your name"></p>
         <p>
-           Email <input type="email" placeholder="Enter your email">
+           Email: <input type="email" placeholder="Enter your email">
         </p>
         <p>
-           password <input type="password" placeholder="Enter your password">
+           password: <input type="password" placeholder="Enter your password">
         </p><p>
-           Mobile number <input type="mobile number" placeholder="mobile number">
+           Mobile number: <input type="mobile number" placeholder="mobile number">
         </p>
         <p>
-            Address
+            Address:
             <textarea placeholder="enter Address">
 
             </textarea>
