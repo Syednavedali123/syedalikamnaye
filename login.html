@@ -4,14 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(60,75,160);
+            height: 100vh;
+
+        }
+        #login_container{
+            padding: 20px;
+            border: 2px solid black;
+            width:fit-content;
+            background-color: transparent;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1); /* white with transparency */
+            backdrop-filter: blur(10px); /* glass blur effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .mail input{
+            background: transparent;
+            height: 30px;
+            border-radius:10px;
+
+        }
+        .password input{
+            background: transparent;
+            height: 30px;
+            border-radius:10px;
+
+        }
+    </style>
 </head>
 <body>
+
+    <div id="login_container">
     <form action="./task.html">
-        <p>
-            Email Address<input type="email" name="email" value="email" placeholder="email id" required>
+        <p class="mail">
+            <input type="email" name="email" value="email" placeholder="email id" required>
         </p>
+         <p class="password">
+           <input type="password> 
+         </p>
          <p>
-            password<input type="password\
+         </p>
+
+        </div>
+
+
             
             
             
